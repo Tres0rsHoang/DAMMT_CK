@@ -6,7 +6,7 @@ from tkcalendar import *
 
 def Show():
 	newwin = Tk()
-
+	newwin.title("Tra Cứu")
 	option = [
 	            "AUSTRALIAN DOLLAR",
 	            "CANADIAN DOLLAR",
@@ -29,7 +29,6 @@ def Show():
 	            "THAILAND BAHT",
 	            "US DOLLAR",
 	        ]
-
 	SelectDay = Label(
 	   newwin, 
 	   text="Ngày tra cứu",
@@ -40,7 +39,6 @@ def Show():
 	   newwin, 
 	   text="Loại tiền tệ",
 	   ).grid(row=2, column=0, pady = 5)
-
 	Unit = ttk.Combobox(
 	    newwin,
 	    width = 22,
@@ -48,13 +46,88 @@ def Show():
 	    )
 	Unit.insert(0, "Chọn loại tiền tệ")
 	Unit.grid(row=3,column=0)
-
+	display_exist = False
+	display = Frame(newwin)
+	display.grid(row=1, column=2)
 	def Confirm():
-	   Day = cal.get_date()
-	   Money = Unit.get()
+		nonlocal display_exist, display
+		Day = cal.get_date().split('/',3)
+		MonthYear = cal.get_displayed_month()
+		Money = Unit.get()
+		Date = Day[1] + '/' + str(MonthYear[0]) + "/" + str(MonthYear[1])
 
-	   print(Day, Money)
+		if Money == "Chọn loại tiền tệ":
+			messagebox.showinfo("Thông báo", "Sai loại tiền tệ, vui lòng nhập lại")
+			return
+		try:
+			client.sendall(bytes("TraCuu","utf8"))
+			check = client.recv(1024).decode("utf8")
+			client.sendall(bytes(Date,"utf8"))
+			check =  client.recv(1024).decode("utf8")
+			client.sendall(bytes(Money,"utf8"))
+			check = client.recv(1024).decode("utf8")
+			MuaTienMat = client.recv(1024).decode("utf8")
+			client.sendall(bytes("Da Nhan Duoc MuaTienMat","utf8"))
+			MuaChuyenKhoan = client.recv(1024).decode("utf8")
+			client.sendall(bytes("Da Nhan Duoc MuaChuyenKhoan","utf8"))
+			Ban = client.recv(1024).decode("utf8")
+			client.sendall(bytes("Da Nhan Duoc Ban","utf8"))
+		except:
+			messagebox.showinfo("Thông báo", "Mất kết nối đến server")
+			return
 
+		if MuaTienMat == '0' and MuaChuyenKhoan == '0' and Ban == '0':
+			messagebox.showinfo("Thông báo", "Sai ngày xem, vui lòng nhập lại")
+			return
+		if display_exist == True:
+			display.grid_forget()
+		display_exist = True
+		display = Frame(newwin)
+		display.grid(row=1, column=2)
+		LoaiTien = Label(
+			display,
+			text="Loại Tiền"
+			).grid(row=0,column=0)
+		Tien = Label(
+			display,
+			text= Money
+			).grid(row=0,column=1)
+
+		NgayTraCuu = Label(
+			display,
+			text="Ngày Tra Cứu"
+			).grid(row=1,column=0)
+		Ngay = Label(
+			display,
+			text= Date
+			).grid(row=1,column=1)
+
+		GiaMuaTienMat = Label(
+			display,
+			text="Giá mua bằng tiền mặt"
+			).grid(row=2,column=0)
+		Mua1 = Label(
+			display,
+			text= MuaTienMat
+			).grid(row=2,column=1)
+
+		GiaMuaChuyenKhoan = Label(
+			display,
+			text="Giá mua bằng chuyển khoảng"
+			).grid(row=3,column=0)
+		Mua2 = Label(
+			display,
+			text= MuaChuyenKhoan
+			).grid(row=3,column=1)
+
+		GiaBan = Label(
+			display,
+			text="Giá bán"
+			).grid(row=4,column=0)
+		Ban = Label(
+			display,
+			text= MuaChuyenKhoan
+			).grid(row=4,column=1)
 	ConfirmButton = Button(
 	   newwin,
 	   text="Tra Cứu",
@@ -92,34 +165,37 @@ def Connected():
 
 
 	def DN():
-		client.sendall(bytes("DangNhap","utf8"))
-		check = client.recv(1024).decode("utf8")
+		try:
+			client.sendall(bytes("DangNhap","utf8"))
+			check = client.recv(1024).decode("utf8")
 
-		Username = Username_Entry.get()
-		Passwords = Passwords_Entry.get()
+			Username = Username_Entry.get()
+			Passwords = Passwords_Entry.get()
 
-		client.sendall(bytes(Username,"utf8"))
-		check = client.recv(1024).decode("utf8")
+			client.sendall(bytes(Username,"utf8"))
+			check = client.recv(1024).decode("utf8")
 
-		client.sendall(bytes(Passwords,"utf8"))
-		check = client.recv(1024).decode("utf8")
+			client.sendall(bytes(Passwords,"utf8"))
+			check = client.recv(1024).decode("utf8")
 
 
-		Mess = client.recv(1024).decode("utf8")
-		client.sendall(bytes("OK","utf8"))
+			Mess = client.recv(1024).decode("utf8")
+			client.sendall(bytes("OK","utf8"))
 
-		if Mess == "WrongPass":
-			messagebox.showinfo("Thông báo", "Sai mật khẩu")
+			if Mess == "WrongPass":
+				messagebox.showinfo("Thông báo", "Sai mật khẩu")
+				return
+			if Mess == "WrongUser":
+				messagebox.showinfo("Thông báo", "Sai Username")
+				return
+			if Mess == "RightUser":
+				messagebox.showinfo("Thông báo", "Đăng nhập thành công!!!")
+				newwin.destroy()
+				Show()
+				return
+		except:
+			messagebox.showinfo("Thông báo", "Mất kết nối đến server")
 			return
-		if Mess == "WrongUser":
-			messagebox.showinfo("Thông báo", "Sai Username")
-			return
-		if Mess == "RightUser":
-			messagebox.showinfo("Thông báo", "Đăng nhập thành công!!!")
-			newwin.destroy()
-			Show()
-			return
-
 
 	LogIn = Button(
 	   newwin,
@@ -167,36 +243,39 @@ def Connected():
 		   )
 		ConfirmPasswords_Entry.insert(END, "Password")
 		ConfirmPasswords_Entry.grid(row=5,column=0)
-
 		def SendDK():
-			ConfirmPasswords = ConfirmPasswords_Entry.get()
-			Passwords = Passwords_Entry.get()
-			Username = Username_Entry.get()
-			if Username.find(" ") != -1: 
-				messagebox.showinfo("Thông báo", "Không được để khoảng trắng trong USERNAME")
-				return
-			if ConfirmPasswords != Passwords:
-				messagebox.showinfo("Thông báo", "Mật khẩu không trùng khớp")
-				return
+			try:
+				ConfirmPasswords = ConfirmPasswords_Entry.get()
+				Passwords = Passwords_Entry.get()
+				Username = Username_Entry.get()
+				if Username.find(" ") != -1: 
+					messagebox.showinfo("Thông báo", "Không được để khoảng trắng trong USERNAME")
+					return
+				if ConfirmPasswords != Passwords:
+					messagebox.showinfo("Thông báo", "Mật khẩu không trùng khớp")
+					return
 
-			client.sendall(bytes("DangKi","utf8"))
-			check = client.recv(1024).decode("utf8")
-
-			client.sendall(bytes(Username,"utf8"))
-			check = client.recv(1024).decode("utf8")
-
-			ExistUsername = client.recv(1024).decode("utf8")
-			client.sendall(bytes("OK","utf8"))
-
-			if ExistUsername == "ExistUsername":
-				messagebox.showinfo("Thông báo", "Username đã tồn tại, vui lòng chọn username khác")
-				return
-			if ExistUsername == "ValidUsername":
-				client.sendall(bytes(Passwords,"utf8"))
+				client.sendall(bytes("DangKi","utf8"))
 				check = client.recv(1024).decode("utf8")
-				messagebox.showinfo("Thông báo", "Chúc mừng bạn đã đăng kí thành công!!!")
-				newwin2.destroy()
-				return
+
+				client.sendall(bytes(Username,"utf8"))
+				check = client.recv(1024).decode("utf8")
+
+				ExistUsername = client.recv(1024).decode("utf8")
+				client.sendall(bytes("OK","utf8"))
+
+				if ExistUsername == "ExistUsername":
+					messagebox.showinfo("Thông báo", "Username đã tồn tại, vui lòng chọn username khác")
+					return
+				if ExistUsername == "ValidUsername":
+					client.sendall(bytes(Passwords,"utf8"))
+					check = client.recv(1024).decode("utf8")
+					messagebox.showinfo("Thông báo", "Chúc mừng bạn đã đăng kí thành công!!!")
+					newwin2.destroy()
+					return
+			except:
+				messagebox.showinfo("Thông báo", "Mất kết nối đến server")
+				exit()
 
 		SignUp = Button(
 		   newwin2,
@@ -218,7 +297,6 @@ def Connected():
 	   )
 	Regis.grid(row=6,column=0,pady = 3)
 	newwin.mainloop()
-
 def Connect():
 	global client
 	Host = IP.get()
