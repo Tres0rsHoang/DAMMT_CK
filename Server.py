@@ -44,7 +44,6 @@ def Server_Running():
             file = open("Database.txt", 'a')
             file.write('\n')
             file.write(Username + ' ' + Password)
-        
         def DangNhap():
             Username = client.recv(1024).decode("utf8")
             client.sendall(bytes("Da Nhan username", "utf8"))
@@ -87,6 +86,10 @@ def Server_Running():
         t1 = threading.Thread(target = SendMess, args = (client,addr))
         t1.start()
 
+def Start():
+    mainThread = threading.Thread(target = Server_Running)
+    mainThread.start()
+
 mainWin = Tk()
 mainWin.title("SERVER")
 mainWin.geometry("200x200")
@@ -95,7 +98,7 @@ Start = Button(
         text = "Khởi động server",
         width = 20,
         height = 10,
-        command = Server_Running
+        command = Start
     ).pack()
 
 mainWin.mainloop()
