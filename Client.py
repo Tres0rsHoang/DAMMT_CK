@@ -87,7 +87,7 @@ def Show():
 		LoaiTien = Label(
 			display,
 			text="Loại Tiền"
-			).grid(row=0,column=0)
+			).grid(row=0,column=0,sticky="W")
 		Tien = Label(
 			display,
 			text= Money
@@ -96,7 +96,7 @@ def Show():
 		NgayTraCuu = Label(
 			display,
 			text="Ngày Tra Cứu"
-			).grid(row=1,column=0)
+			).grid(row=1,column=0,sticky="W")
 		Ngay = Label(
 			display,
 			text= Date
@@ -105,7 +105,7 @@ def Show():
 		GiaMuaTienMat = Label(
 			display,
 			text="Giá mua bằng tiền mặt"
-			).grid(row=2,column=0)
+			).grid(row=2,column=0,sticky="W")
 		Mua1 = Label(
 			display,
 			text= MuaTienMat
@@ -113,8 +113,8 @@ def Show():
 
 		GiaMuaChuyenKhoan = Label(
 			display,
-			text="Giá mua bằng chuyển khoảng"
-			).grid(row=3,column=0)
+			text="Giá mua bằng chuyển khoản"
+			).grid(row=3,column=0,sticky="W")
 		Mua2 = Label(
 			display,
 			text= MuaChuyenKhoan
@@ -123,7 +123,7 @@ def Show():
 		GiaBan = Label(
 			display,
 			text="Giá bán"
-			).grid(row=4,column=0)
+			).grid(row=4,column=0,sticky="W")
 		Ban = Label(
 			display,
 			text= MuaChuyenKhoan
@@ -135,7 +135,6 @@ def Show():
 	   width = 10,
 	   command = Confirm
 	   ).grid(row=1, column=1)
-
 def Connected():
 	newwin = Tk()
 	newwin.title("Đăng Nhập")

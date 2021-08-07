@@ -119,7 +119,6 @@ def Server_Running():
         while True:
             try:
                 command = client.recv(1024).decode("utf8")
-                print(1)
                 client.sendall(bytes("Da Nhan","utf8"))
                 print(command)
                 if command == "DangKi": DangKi()
