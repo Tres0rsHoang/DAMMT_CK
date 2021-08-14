@@ -4,9 +4,20 @@ from tkinter import messagebox
 from tkinter import ttk
 from tkcalendar import *
 
+Background = '#08748C'
+Highlight_font_color = '#EDE907'
+Highlight_background_color = '#022340'
+Font_color = '#0FF2F2'
+Background_color = '#023E73'
+Entry_color = '#011526'
+Entry_background = '#0FF2F2'
+
+
 def Show():
 	newwin = Tk()
-	newwin.title("Tra Cứu")
+	newwin.geometry("465x550")
+	newwin.configure(bg = Background)
+	newwin.title("Look Up")
 	option = [
 	            "AUSTRALIAN DOLLAR",
 	            "CANADIAN DOLLAR",
@@ -29,23 +40,42 @@ def Show():
 	            "THAILAND BAHT",
 	            "US DOLLAR",
 	        ]
+
+	title = Label(
+		newwin,
+		text = "__TỶ GIÁ TIỀN TỆ__",
+		fg = Highlight_font_color,
+		bg = Background,
+		)
+	title.config(font=('Fira Sans ExtraBold',20))
+	title.grid(row=0, column=0, padx = 10, pady = 10, columnspan = 2)
+	kcach = Label(
+		newwin,
+		text = '',
+		bg = Background,
+    	fg = Highlight_font_color,
+		).grid(row=1, column=0, columnspan = 2)
 	SelectDay = Label(
 	   newwin, 
-	   text="Ngày tra cứu",
-	   ).grid(row=0, column=0, pady = 5)
-	cal = Calendar(newwin, selectmode = "day", year = 2021, month = 8, day = 5)
-	cal.grid(row=1, column = 0)
+	   text="Ngày tra cứu:",
+	   bg = Background,
+	   fg = Highlight_font_color,
+	   ).grid(row=2, column=0, sticky=W, padx = 15, pady = 10)
+	cal = Calendar(newwin, selectmode = "day", year = 2021, month = 8, day = 7)
+	cal.grid(row=3, column = 0, padx = 15, pady = 10, rowspan = 2)
 	SelectUnit = Label(
 	   newwin, 
-	   text="Loại tiền tệ",
-	   ).grid(row=2, column=0, pady = 5)
+	   text="Loại tiền tệ:",
+	   bg = Background,
+	   fg = Highlight_font_color,
+	   ).grid(row=2, column=1, sticky=W, padx = 15, pady = 10)
 	Unit = ttk.Combobox(
 	    newwin,
 	    width = 22,
 	    values = option
 	    )
 	Unit.insert(0, "Chọn loại tiền tệ")
-	Unit.grid(row=3,column=0)
+	Unit.grid(row=3,column=1, padx = 15, pady = 10)
 	display_exist = False
 	display = Frame(newwin)
 	display.grid(row=1, column=2)
@@ -77,87 +107,127 @@ def Show():
 			return
 
 		if MuaTienMat == '0' and MuaChuyenKhoan == '0' and Ban == '0':
-			messagebox.showinfo("Thông báo", "Sai ngày xem, vui lòng nhập lại")
+			messagebox.showinfo("Thông báo", "Không tìm thấy loại tiền vào ngày này, vui lòng nhập lại")
 			return
 		if display_exist == True:
 			display.grid_forget()
 		display_exist = True
-		display = Frame(newwin)
-		display.grid(row=1, column=2)
+		display = Frame(newwin, bg=Background)
+		display.grid(row=5, column=0, columnspan = 2, padx =15, pady = 15)
+
+		daugach = Label(
+			display,
+			text ="==================================================",
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=0,column=0, sticky='w', padx = 10, pady = 5, columnspan = 2)
 		LoaiTien = Label(
 			display,
-			text="Loại Tiền"
-			).grid(row=0,column=0,sticky="W")
+			text="Loại Tiền:",
+			bg = Background,
+    		fg = Highlight_background_color,
+			).grid(row=1,column=0, sticky='w', padx = 10, pady = 5)
 		Tien = Label(
 			display,
-			text= Money
-			).grid(row=0,column=1)
+			text= Money,
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=1,column=1)
 
 		NgayTraCuu = Label(
 			display,
-			text="Ngày Tra Cứu"
-			).grid(row=1,column=0,sticky="W")
+			text="Ngày Tra Cứu:",
+			bg = Background,
+    		fg = Highlight_background_color,
+			).grid(row=2,column=0, sticky='w', padx = 10, pady = 5)
 		Ngay = Label(
 			display,
-			text= Date
-			).grid(row=1,column=1)
+			text= Date,
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=2,column=1)
 
 		GiaMuaTienMat = Label(
 			display,
-			text="Giá mua bằng tiền mặt"
-			).grid(row=2,column=0,sticky="W")
+			text="Giá mua bằng tiền mặt:",
+			bg = Background,
+    		fg = Highlight_background_color,
+			).grid(row=3,column=0, sticky='w', padx = 10, pady = 5)
 		Mua1 = Label(
 			display,
-			text= MuaTienMat
-			).grid(row=2,column=1)
+			text= MuaTienMat,
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=3,column=1)
 
 		GiaMuaChuyenKhoan = Label(
 			display,
-			text="Giá mua bằng chuyển khoản"
-			).grid(row=3,column=0,sticky="W")
+			text="Giá mua bằng chuyển khoảng:",
+			bg = Background,
+    		fg = Highlight_background_color,
+			).grid(row=4,column=0, sticky='w', padx = 10, pady = 5)
 		Mua2 = Label(
 			display,
-			text= MuaChuyenKhoan
-			).grid(row=3,column=1)
+			text= MuaChuyenKhoan,
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=4,column=1)
 
 		GiaBan = Label(
 			display,
-			text="Giá bán"
-			).grid(row=4,column=0,sticky="W")
+			text="Giá bán:",
+			bg = Background,
+    		fg = Highlight_background_color,
+			).grid(row=5,column=0, sticky='w', padx = 10, pady = 5)
 		Ban = Label(
 			display,
-			text= MuaChuyenKhoan
-			).grid(row=4,column=1)
+			text= MuaChuyenKhoan,
+			bg = Background,
+    		fg = Highlight_font_color,
+			).grid(row=5,column=1)
 	ConfirmButton = Button(
 	   newwin,
 	   text="Tra Cứu",
-	   height = 10,
-	   width = 10,
+	   height = 7,
+	   width = 15,
+	   borderwidth=5,
+	   fg = Highlight_font_color,
+       bg = Highlight_background_color,
 	   command = Confirm
-	   ).grid(row=1, column=1)
+	   ).grid(row=4, column=1)
 def Connected():
 	newwin = Tk()
-	newwin.title("Đăng Nhập")
+	newwin.geometry("405x240")
+	newwin.configure(bg = Background)
+	newwin.title("Log In")
 
 	TextUsername = Label(
 	   newwin,
-	   text = "Username"
-	   ).grid(row=0,column=0,sticky=W)
+	   text = "Username",
+	   bg = Background,
+	   fg = Highlight_font_color,
+	   ).grid(row=0,column=0,sticky=W, padx =10, pady = 10)
 	Username_Entry = Entry(
 	   newwin,
 	   width = 60,
+	   bg = Entry_background,
+	   fg = Entry_color,
 	   )
 	Username_Entry.insert(END, "Nhập tên đăng nhập")
 	Username_Entry.grid(row=1,column=0, padx = 20)
 
 	TextPassword = Label(
 	   newwin,
-	   text = "Password"
-	   ).grid(row=2,column=0,sticky=W)
+	   text = "Password",
+	   bg = Background,
+	   fg = Highlight_font_color,
+	   ).grid(row=2,column=0,sticky=W, padx =10, pady = 10)
 	Passwords_Entry = Entry(
 	   newwin,
 	   show = '*',
 	   width = 60,
+	   bg = Entry_background,
+	   fg = Entry_color,
 	   )
 	Passwords_Entry.insert(END, "Password")
 	Passwords_Entry.grid(row=3,column=0)
@@ -200,32 +270,44 @@ def Connected():
 	   newwin,
 	   width = 10,
 	   text = "Đăng nhập",
+	   borderwidth=5,
+	   fg = Highlight_font_color,
+	   bg = Highlight_background_color,
 	   command = DN
 	   )
 	LogIn.grid(row=4,column=0,pady = 10)
 
 	def DK():
 		newwin2 = Tk()
-		newwin2.title("Đăng Kí")
+		newwin2.configure(bg = Background)
+		newwin2.title("Sign Up")
 
 		TextUsername = Label(
 		   newwin2,
-		   text = "Username"
-		   ).grid(row=0,column=0,sticky=W)
+		   text = "Username",
+		   bg = Background,
+	       fg = Highlight_font_color,
+		   ).grid(row=0,column=0,sticky=W, padx = 10, pady = 10)
 		Username_Entry = Entry(
 		   newwin2,
 		   width = 60,
+		   bg = Entry_background,
+		   fg = Entry_color,
 		   )
 		Username_Entry.insert(END, "Tên đăng nhập")
 		Username_Entry.grid(row=1,column=0, padx = 20)
 
 		TextPassword = Label(
 		   newwin2,
+		   bg = Background,
+	       fg = Highlight_font_color,
 		   text = "Password"
-		   ).grid(row=2,column=0,sticky=W)
+		   ).grid(row=2,column=0,sticky=W, padx =10, pady = 10)
 		Passwords_Entry = Entry(
 		   newwin2,
 		   show = '*',
+		   bg = Entry_background,
+		   fg = Entry_color,
 		   width = 60,
 		   )
 		Passwords_Entry.insert(END, "Password")
@@ -233,12 +315,16 @@ def Connected():
 
 		TextConfirmPassword = Label(
 		   newwin2,
-		   text = "Confirm Password"
-		   ).grid(row=4,column=0,sticky=W)
+		   text = "Confirm Password",
+		   bg = Background,
+	       fg = Highlight_font_color,
+		   ).grid(row=4,column=0,sticky=W, padx =10, pady =10)
 		ConfirmPasswords_Entry = Entry(
 		   newwin2,
 		   show = '*',
 		   width = 60,
+		   bg = Entry_background,
+		   fg = Entry_color,
 		   )
 		ConfirmPasswords_Entry.insert(END, "Password")
 		ConfirmPasswords_Entry.grid(row=5,column=0)
@@ -280,18 +366,26 @@ def Connected():
 		   newwin2,
 		   width = 10,
 		   text = "Đăng kí",
+		   borderwidth=5,
+	       fg = Highlight_font_color,
+	       bg = Highlight_background_color,
 		   command = SendDK
 		   )
-		SignUp.grid(row=6,column=0,pady = 10)
+		SignUp.grid(row=6,column=0, pady = 10)
 
 	TextRegis = Label(
 	   newwin,
-	   text = "Nếu chưa có tài khoản, vui lòng ấn đăng ký"
-	   ).grid(row=5,column=0)
+	   text = "Nếu chưa có tài khoản, vui lòng ấn đăng ký",
+	   bg = Background,
+	   fg = Entry_color,
+	   ).grid(row=5,column=0, pady =5)
 	Regis = Button(
 	   newwin,
 	   width = 10,
 	   text = "Đăng kí",
+	   borderwidth=5,
+	   fg = Highlight_font_color,
+	   bg = Highlight_background_color,
 	   command = DK
 	   )
 	Regis.grid(row=6,column=0,pady = 3)
@@ -311,18 +405,26 @@ def Connect():
 	    messagebox.showinfo("Kết nối", "Sai IP")
 
 mainwin = Tk()
+mainwin.configure(bg = Background)
 mainwin.title("CLIENT")
 
 IP = Entry(
 	mainwin,
-	width = 60,
+	width = 55,
+	bg = Entry_background,
+    fg = Entry_color,
 	)
-IP.insert(END, "Nhập IP")
+IP.insert(END, "Nhập IP server")
 IP.grid(row = 1, column = 0, padx = 15)
 
-Text = Label(text="Xem tỉ Giá Tiền Tệ")
-Text.config(font=('',15))
-Text.grid(row=0, columnspan = 2)
+Text = Label(
+	mainwin, 
+	text="TRA CỨU TỈ GIÁ TIỀN TỆ THẾ GIỚI",
+	bg = Background,
+    fg = Highlight_font_color,
+	)
+Text.config(font=('Fira Sans ExtraBold',20))
+Text.grid(row=0, columnspan = 1, pady = 0)
 
 Connect_Button = Button(
 	mainwin,
@@ -330,7 +432,9 @@ Connect_Button = Button(
 	padx = 15, 
     pady = 15, 
     borderwidth=5,
+    fg = Highlight_font_color,
+    bg = Highlight_background_color,
     command = Connect
-	).grid(row = 1, column = 1)
+	).grid(row = 1, column = 1, padx =15, pady = 2)
 
 mainwin.mainloop()

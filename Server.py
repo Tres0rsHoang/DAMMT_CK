@@ -6,8 +6,15 @@ from tkinter import *
 import requests
 from bs4 import BeautifulSoup
 
-HOST = ''  
+HOST = ''
 PORT = 1233
+Background = '#08748C'
+Highlight_font_color = '#EDE907'
+Highlight_background_color = '#022340'
+Font_color = '#0FF2F2'
+Background_color = '#023E73'
+Entry_color = '#011526'
+Entry_background = '#0FF2F2'
 
 def Server_Running():
     global HOST, PORT, server
@@ -79,8 +86,10 @@ def Server_Running():
                file = open('tygia.txt','w',encoding='utf-8')
                file.write(str(soup))
                file.close()
+
                file = open('tygia.txt','r',encoding='utf-8')
                data = file.read()
+               
                start = data.find(money)
                if start == -1: 
                   return '0', '0', '0'
@@ -149,14 +158,19 @@ def StopServer():
         server.close()
         exit()
     return
+
 mainWin = Tk()
 mainWin.title("SERVER")
+mainWin.configure(bg = Background)
 mainWin.geometry("200x200")
 Start = Button(
         mainWin,
         text = "Khởi động server",
         width = 20,
         height = 10,
+        borderwidth=5,
+        fg = Highlight_font_color,
+        bg = Highlight_background_color,
         command = StartServer
     ).pack()
 Stop = Button(
@@ -164,6 +178,9 @@ Stop = Button(
     text = "Tắt server",
     width = 20,
     height = 10,
+    borderwidth=5,
+    fg = Highlight_font_color,
+    bg = Highlight_background_color,
     command = StopServer
     ).pack()
 mainWin.mainloop()
