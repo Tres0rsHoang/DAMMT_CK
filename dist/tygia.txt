@@ -1,0 +1,208 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+</title>
+<style type="text/css">
+        .tbl-01 th,  .tbl-01 td {
+            text-align:center;
+            border:1px solid #bdbdbd;
+            font-family:Arial;
+            font-size:13px;
+        }
+         .tbl-01 td {
+            text-align:right;
+            border:1px solid #bdbdbd;
+            font-family:Arial;
+            font-size:13px;
+            
+        }
+         .tbl-01 {
+            width: 80% !important;
+            margin: 0 auto !important;
+             float: none !important;
+         }
+		 button#btnRefresh { background-color: #005030  !important; color: #fff  !important; padding: 7px; border-radius: 5px; width: 90px; border: none; }
+    </style>
+</head>
+<body>
+<div style="background: #FFF;  border-radius: 5px 5px; display:flex;">
+<table border="0" cellspacing="1" class="tbl-01 rateTable" id="ctl00_Content_ExrateView">
+<tbody>
+<tr class="classth fontS-11">
+<th colspan="2">Ngoại tệ</th>
+<th colspan="2">Mua
+                </th>
+<th rowspan="2">
+<div style="margin-top:-26px; font-weight:bold;">
+                    Bán
+                    </div>
+</th>
+</tr>
+<tr class="classth fontS-11">
+<th style="width:25%;">Tên ngoại tệ</th>
+<th>
+                    Mã NT
+                </th>
+<th style="width: 20%;">Tiền mặt</th>
+<th style="width: 20%;">Chuyển khoản</th>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> AUSTRALIAN DOLLAR   </td>
+<td style="text-align:center;">AUD</td>
+<td>16,519.71 </td>
+<td>16,686.57</td>
+<td>17,209.79</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> CANADIAN DOLLAR     </td>
+<td style="text-align:center;">CAD</td>
+<td>17,823.73 </td>
+<td>18,003.77</td>
+<td>18,568.29</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> SWISS FRANC         </td>
+<td style="text-align:center;">CHF</td>
+<td>24,745.76 </td>
+<td>24,995.72</td>
+<td>25,779.48</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> YUAN RENMINBI       </td>
+<td style="text-align:center;">CNY</td>
+<td>3,473.87 </td>
+<td>3,508.96</td>
+<td>3,619.53</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> DANISH KRONE        </td>
+<td style="text-align:center;">DKK</td>
+<td>- </td>
+<td>3,592.78</td>
+<td>3,727.74</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> EURO                </td>
+<td style="text-align:center;">EUR</td>
+<td>26,523.66 </td>
+<td>26,791.57</td>
+<td>27,903.87</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> POUND STERLING      </td>
+<td style="text-align:center;">GBP</td>
+<td>31,091.84 </td>
+<td>31,405.90</td>
+<td>32,390.65</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> HONGKONG DOLLAR     </td>
+<td style="text-align:center;">HKD</td>
+<td>2,875.82 </td>
+<td>2,904.86</td>
+<td>2,995.95</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> INDIAN RUPEE        </td>
+<td style="text-align:center;">INR</td>
+<td>- </td>
+<td>308.36</td>
+<td>320.47</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> YEN                 </td>
+<td style="text-align:center;">JPY</td>
+<td>205.19 </td>
+<td>207.26</td>
+<td>215.95</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> KOREAN WON          </td>
+<td style="text-align:center;">KRW</td>
+<td>17.28 </td>
+<td>19.20</td>
+<td>21.04</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> KUWAITI DINAR       </td>
+<td style="text-align:center;">KWD</td>
+<td>- </td>
+<td>76,280.77</td>
+<td>79,274.61</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> MALAYSIAN RINGGIT   </td>
+<td style="text-align:center;">MYR</td>
+<td>- </td>
+<td>5,374.76</td>
+<td>5,488.12</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> NORWEGIAN KRONER    </td>
+<td style="text-align:center;">NOK</td>
+<td>- </td>
+<td>2,547.76</td>
+<td>2,654.06</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> RUSSIAN RUBLE       </td>
+<td style="text-align:center;">RUB</td>
+<td>- </td>
+<td>313.75</td>
+<td>349.61</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> SAUDI RIAL          </td>
+<td style="text-align:center;">SAR</td>
+<td>- </td>
+<td>6,100.83</td>
+<td>6,340.28</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> SWEDISH KRONA       </td>
+<td style="text-align:center;">SEK</td>
+<td>- </td>
+<td>2,613.36</td>
+<td>2,722.40</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> SINGAPORE DOLLAR    </td>
+<td style="text-align:center;">SGD</td>
+<td>16,554.57 </td>
+<td>16,721.79</td>
+<td>17,246.11</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> THAILAND BAHT       </td>
+<td style="text-align:center;">THB</td>
+<td>613.01 </td>
+<td>681.12</td>
+<td>706.70</td>
+</tr>
+<tr class="odd" data-time="08/04/2021 23:00:05">
+<td style="text-align:left;"> US DOLLAR           </td>
+<td style="text-align:center;">USD</td>
+<td>22,810.00 </td>
+<td>22,840.00</td>
+<td>23,040.00</td>
+</tr>
+<script>
+                $(document).ready(function() {
+					
+						$("#UpdateTime").html("04/08/2021 23:00");
+					
+                });
+            </script>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'IBBDPHGPLMMPNHGFDNKMEPOJLAEECPONNJOKMBMLKIAOEBLIBDHFEIIEBOABIMNLANJCEABLINIBABHAKGHPHGJDEAJAFBDGAALPKHLGAHGJKLDGAALDJGILDEJNGJKC',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0956252350aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>

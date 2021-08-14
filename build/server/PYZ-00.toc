@@ -899,13 +899,13 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
    'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
-   'PYMODULE'),
   ('stringprep',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
    'PYMODULE'),
   ('bs4',
    'c:\\users\\bao '

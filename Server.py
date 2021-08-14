@@ -63,8 +63,10 @@ def Server_Running():
 
             Password = client.recv(1024).decode("utf8")
             client.sendall(bytes("Da Nhan Password", "utf8"))
-
-            file = open("Database.txt", 'r')
+            try:
+                file = open("Database.txt", 'r')
+            except:
+                file = open("Database.txt", 'w+')
             line = file.readline()
             while True:
                 line = file.readline()
@@ -160,6 +162,8 @@ def StopServer():
     check = messagebox.askyesno("Tắt Server", "Bạn có muốn ngưng Server?")
     if check == 1:
         server.close()
+        mainWin.destroy()
+        #exit()
     return
 
 mainWin = Tk()
