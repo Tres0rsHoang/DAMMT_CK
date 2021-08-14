@@ -33,8 +33,12 @@ def Server_Running():
         def DangKi():
             Username = client.recv(1024).decode("utf8")
             client.sendall(bytes("Da nhan username", "utf8"))
-
-            file = open("Database.txt", 'r')
+            print(Username)
+            try:
+                file = open("Database.txt", 'r')
+            except:
+                file = open("Database.txt", 'w+')
+            line = file.readline()
             while True:
                 line = file.readline()
                 line = line.strip()
@@ -62,6 +66,7 @@ def Server_Running():
             client.sendall(bytes("Da Nhan Password", "utf8"))
 
             file = open("Database.txt", 'r')
+            line = file.readline()
             while True:
                 line = file.readline()
                 line = line.strip()
