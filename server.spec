@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['server.py'],
-             pathex=['C:\\Users\\BAO HOANG\\OneDrive\\Desktop\\DAMMT'],
+             pathex=['D:\\Python\\DAMMT'],
              binaries=[],
              datas=[],
              hiddenimports=[],

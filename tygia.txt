@@ -48,150 +48,150 @@
 <th style="width: 20%;">Tiền mặt</th>
 <th style="width: 20%;">Chuyển khoản</th>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> AUSTRALIAN DOLLAR   </td>
 <td style="text-align:center;">AUD</td>
-<td>16,503.56 </td>
-<td>16,670.27</td>
-<td>17,192.98</td>
+<td>16,292.70 </td>
+<td>16,457.27</td>
+<td>16,973.14</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> CANADIAN DOLLAR     </td>
 <td style="text-align:center;">CAD</td>
-<td>17,874.36 </td>
-<td>18,054.91</td>
-<td>18,621.04</td>
+<td>17,045.79 </td>
+<td>17,217.97</td>
+<td>17,757.69</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> SWISS FRANC         </td>
 <td style="text-align:center;">CHF</td>
-<td>24,636.84 </td>
-<td>24,885.70</td>
-<td>25,666.01</td>
+<td>24,900.07 </td>
+<td>25,151.59</td>
+<td>25,940.00</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> YUAN RENMINBI       </td>
 <td style="text-align:center;">CNY</td>
-<td>3,474.61 </td>
-<td>3,509.71</td>
-<td>3,620.30</td>
+<td>3,274.72 </td>
+<td>3,307.80</td>
+<td>3,412.00</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> DANISH KRONE        </td>
 <td style="text-align:center;">DKK</td>
 <td>- </td>
-<td>3,579.16</td>
-<td>3,713.61</td>
+<td>3,630.21</td>
+<td>3,766.54</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> EURO                </td>
 <td style="text-align:center;">EUR</td>
-<td>26,415.98 </td>
-<td>26,682.81</td>
-<td>27,790.61</td>
+<td>26,844.20 </td>
+<td>27,115.35</td>
+<td>28,213.29</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> POUND STERLING      </td>
 <td style="text-align:center;">GBP</td>
-<td>31,105.10 </td>
-<td>31,419.30</td>
-<td>32,404.48</td>
+<td>29,695.59 </td>
+<td>29,995.55</td>
+<td>30,935.80</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> HONGKONG DOLLAR     </td>
 <td style="text-align:center;">HKD</td>
-<td>2,874.49 </td>
-<td>2,903.52</td>
-<td>2,994.57</td>
+<td>2,915.97 </td>
+<td>2,945.42</td>
+<td>3,037.75</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> INDIAN RUPEE        </td>
 <td style="text-align:center;">INR</td>
 <td>- </td>
-<td>308.68</td>
-<td>320.80</td>
+<td>309.16</td>
+<td>321.29</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> YEN                 </td>
 <td style="text-align:center;">JPY</td>
-<td>203.51 </td>
-<td>205.56</td>
-<td>214.18</td>
+<td>212.31 </td>
+<td>214.45</td>
+<td>222.46</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> KOREAN WON          </td>
 <td style="text-align:center;">KRW</td>
-<td>17.35 </td>
-<td>19.28</td>
-<td>21.13</td>
+<td>16.95 </td>
+<td>18.83</td>
+<td>20.63</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> KUWAITI DINAR       </td>
 <td style="text-align:center;">KWD</td>
 <td>- </td>
-<td>76,222.10</td>
-<td>79,213.66</td>
+<td>75,666.73</td>
+<td>78,635.76</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> MALAYSIAN RINGGIT   </td>
 <td style="text-align:center;">MYR</td>
 <td>- </td>
-<td>5,377.50</td>
-<td>5,490.93</td>
+<td>5,484.24</td>
+<td>5,599.87</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> NORWEGIAN KRONER    </td>
 <td style="text-align:center;">NOK</td>
 <td>- </td>
-<td>2,545.67</td>
-<td>2,651.88</td>
+<td>2,540.39</td>
+<td>2,646.36</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> RUSSIAN RUBLE       </td>
 <td style="text-align:center;">RUB</td>
 <td>- </td>
-<td>312.80</td>
-<td>348.55</td>
+<td>318.65</td>
+<td>355.07</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> SAUDI RIAL          </td>
 <td style="text-align:center;">SAR</td>
 <td>- </td>
-<td>6,099.64</td>
-<td>6,339.04</td>
+<td>6,166.17</td>
+<td>6,408.12</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> SWEDISH KRONA       </td>
 <td style="text-align:center;">SEK</td>
 <td>- </td>
-<td>2,605.26</td>
-<td>2,713.96</td>
+<td>2,628.34</td>
+<td>2,737.98</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> SINGAPORE DOLLAR    </td>
 <td style="text-align:center;">SGD</td>
-<td>16,536.33 </td>
-<td>16,703.37</td>
-<td>17,227.12</td>
+<td>16,517.55 </td>
+<td>16,684.39</td>
+<td>17,207.39</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> THAILAND BAHT       </td>
 <td style="text-align:center;">THB</td>
-<td>607.96 </td>
-<td>675.51</td>
-<td>700.88</td>
+<td>660.78 </td>
+<td>734.20</td>
+<td>761.78</td>
 </tr>
-<tr class="odd" data-time="08/07/2021 23:00:06">
+<tr class="odd" data-time="08/06/2020 23:00:05">
 <td style="text-align:left;"> US DOLLAR           </td>
 <td style="text-align:center;">USD</td>
-<td>22,800.00 </td>
-<td>22,830.00</td>
-<td>23,030.00</td>
+<td>23,060.00 </td>
+<td>23,090.00</td>
+<td>23,270.00</td>
 </tr>
 <script>
                 $(document).ready(function() {
 					
-						$("#UpdateTime").html("07/08/2021 23:00");
+						$("#UpdateTime").html("06/08/2020 23:00");
 					
                 });
             </script>
@@ -200,7 +200,7 @@
 </div>
 </body>
 </html>
-<script id="f5_cspm">(function(){var f5_cspm={f5_p:'ODHOKMCLGDIGNPOEJMPLFJKDCMIOGGLLGFGJMPLJBKNFODKIELEHOJCMFONHFMBOFBEBNGNHNFIBAPDMLAKBKEEACAMAOHHCAAGBDBKDPIOIKJNLAAKFKLBPKJOGFKID',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0956252350aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'GGHIGLIPPMMDIANCOCLJGFOEHKPIJCEODBMICCMANAGMGGIJLFOIKKOOEBNLJIEIOPDDLMCOMOIBDELBJOCAFAFFPBIALGPHAAKOPGOMLIIFLPCOAAPHLMFAHCFNNDOJ',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,48,(latency>>8));str=f5_cspm.set_byte(str,49,(latency&0xff));str=f5_cspm.set_byte(str,43,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr0956252350aaaaaaaaaaaaaaaa='+encodeURIComponent(cookie_val)+';path=/';}
 return;}}
 catch(err){return;}
 setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')

@@ -5,10 +5,10 @@ block_cipher = None
 
 
 a = Analysis(['client.py'],
-             pathex=['C:\\Users\\BAO HOANG\\OneDrive\\Desktop\\DAMMT'],
+             pathex=['D:\\Python\\DAMMT'],
              binaries=[],
              datas=[],
-             hiddenimports=[],
+             hiddenimports=['babel.numbers'],
              hookspath=[],
              hooksconfig={},
              runtime_hooks=[],

@@ -33,7 +33,6 @@ def Server_Running():
         def DangKi():
             Username = client.recv(1024).decode("utf8")
             client.sendall(bytes("Da nhan username", "utf8"))
-            print(Username)
             try:
                 file = open("Database.txt", 'r')
             except:
@@ -161,7 +160,6 @@ def StopServer():
     check = messagebox.askyesno("Tắt Server", "Bạn có muốn ngưng Server?")
     if check == 1:
         server.close()
-        exit()
     return
 
 mainWin = Tk()

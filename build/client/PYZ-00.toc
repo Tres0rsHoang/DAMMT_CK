@@ -1,4 +1,4 @@
-('C:\\Users\\BAO HOANG\\OneDrive\\Desktop\\DAMMT\\build\\client\\PYZ-00.pyz',
+('D:\\Python\\DAMMT\\build\\client\\PYZ-00.pyz',
  [('os',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\os.py',
@@ -1031,33 +1031,9 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.pyparsing',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
-   'PYMODULE'),
-  ('uuid',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\uuid.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
   ('pkg_resources._vendor.packaging._typing',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_typing.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.requirements',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
    'PYMODULE'),
   ('pkg_resources._vendor.appdirs',
    'c:\\users\\bao '
@@ -1075,13 +1051,33 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('uuid',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\uuid.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.requirements',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._compat',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.markers',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.packaging._structures',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.tags',
    'c:\\users\\bao '
@@ -1091,13 +1087,17 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
    'PYMODULE'),
+  ('pkg_resources._vendor.packaging',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging.utils',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
   ('pkg_resources._vendor.packaging.__about__',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging.markers',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\markers.py',
    'PYMODULE'),
   ('pkg_resources.extern',
    'c:\\users\\bao '
@@ -1107,65 +1107,21 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\imp.py',
    'PYMODULE'),
-  ('tracemalloc',
+  ('babel.numbers',
    'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\numbers.py',
    'PYMODULE'),
-  ('_py_abc',
+  ('babel',
    'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
-   'PYMODULE'),
-  ('stringprep',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
-   'PYMODULE'),
-  ('tkcalendar',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\__init__.py',
-   'PYMODULE'),
-  ('tkcalendar.calendar_',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\calendar_.py',
-   'PYMODULE'),
-  ('tkcalendar.tooltip',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\tooltip.py',
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\__init__.py',
    'PYMODULE'),
   ('babel.dates',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\dates.py',
    'PYMODULE'),
-  ('babel._compat',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\_compat.py',
-   'PYMODULE'),
   ('babel.util',
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\util.py',
-   'PYMODULE'),
-  ('babel.localtime',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\__init__.py',
-   'PYMODULE'),
-  ('babel.localtime._unix',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\_unix.py',
-   'PYMODULE'),
-  ('babel.localtime._win32',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\_win32.py',
-   'PYMODULE'),
-  ('babel.core',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\core.py',
-   'PYMODULE'),
-  ('babel.plural',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\plural.py',
-   'PYMODULE'),
-  ('babel.localedata',
-   'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localedata.py',
    'PYMODULE'),
   ('pytz',
    'c:\\users\\bao '
@@ -1187,9 +1143,57 @@
    'c:\\users\\bao '
    'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\pytz\\exceptions.py',
    'PYMODULE'),
-  ('babel',
+  ('babel.localtime',
    'c:\\users\\bao '
-   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\__init__.py',
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\__init__.py',
+   'PYMODULE'),
+  ('babel.localtime._unix',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\_unix.py',
+   'PYMODULE'),
+  ('babel.localtime._win32',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localtime\\_win32.py',
+   'PYMODULE'),
+  ('babel.localedata',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\localedata.py',
+   'PYMODULE'),
+  ('babel._compat',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\_compat.py',
+   'PYMODULE'),
+  ('babel.core',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\core.py',
+   'PYMODULE'),
+  ('babel.plural',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\babel\\plural.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('tkcalendar',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\__init__.py',
+   'PYMODULE'),
+  ('tkcalendar.calendar_',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\calendar_.py',
+   'PYMODULE'),
+  ('tkcalendar.tooltip',
+   'c:\\users\\bao '
+   'hoang\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tkcalendar\\tooltip.py',
    'PYMODULE'),
   ('tkinter.font',
    'c:\\users\\bao '
